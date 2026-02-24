@@ -1,0 +1,6 @@
+{
+  "name": "backlog",
+  "version": "0.1.0",
+  "description": "Frictionless backlog capture and task promotion.",
+  "skills": ["backlog-task"]
+}

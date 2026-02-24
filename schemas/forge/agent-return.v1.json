@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Forge Agent Return",
+  "type": "object",
+  "required": ["summary"],
+  "properties": {
+    "summary": { "type": "string" },
+    "decisions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "risks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "commandsRun": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "filesTouched": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "nextSteps": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

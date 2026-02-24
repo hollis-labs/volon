@@ -1,0 +1,6 @@
+{
+  "name": "tasks-nanite",
+  "version": "0.1.0",
+  "description": "Nanite-backed tasks and backlog adapter (create, update, list).",
+  "skills": ["task-create", "task-list", "task-update"]
+}

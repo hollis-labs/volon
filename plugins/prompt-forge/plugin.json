@@ -1,0 +1,6 @@
+{
+  "name": "prompt-forge",
+  "version": "0.1.0",
+  "description": "Prompt generator: produce copy/paste-ready Forge prompts from a natural language intent.",
+  "skills": ["forge-prompt"]
+}

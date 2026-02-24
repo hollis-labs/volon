@@ -1,0 +1,15 @@
+{
+  "name": "workflows",
+  "version": "0.4.0",
+  "description": "Composable workflows: inception loop, new-feature, docs-review, extension authoring (agent, skill, slash-command, plugin), and app investigation.",
+  "skills": [
+    "workflow-inception",
+    "workflow-new-feature",
+    "workflow-docs-review",
+    "workflow-new-agent",
+    "workflow-new-skill",
+    "workflow-new-slash-command",
+    "workflow-new-plugin",
+    "workflow-app-investigation"
+  ]
+}

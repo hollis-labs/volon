@@ -1,0 +1,5 @@
+{
+  "name": "core",
+  "description": "Core skills for config, observability, and Project Context Cache (PCC).",
+  "version": "0.1.0"
+}

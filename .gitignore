@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Forge run logs (verbose, regenerable)
+.forge/logs/
+
+# Sensitive files
+*.env
+*.pem
+*.key
+credentials.*
+
+# Git worktrees
+.worktrees/
+
+# Nanite vault database files
+*.db
+*.db-shm
+*.db-wal
+
+# Local Go build caches
+.forge/.gomodcache/
+.forge/.gocache/
+
+# Editor
+.claude/

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Forge Agent Envelope",
+  "type": "object",
+  "required": ["apiVersion", "kind", "metadata", "spec"],
+  "properties": {
+    "apiVersion": {
+      "const": "forge.agent-envelope/v0.1"
+    },
+    "kind": {
+      "const": "AgentEnvelope"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "labels": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    },
+    "spec": {
+      "type": "object",
+      "required": ["role", "objective"],
+      "properties": {
+        "role": {
+          "enum": ["worker", "orchestrator"]
+        },
+        "objective": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "object",
+          "properties": {
+            "pcc": {
+              "type": "object",
+              "properties": {
+                "include": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "properties": {
+            "artifacts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["path"],
+                "properties": {
+                  "path": { "type": "string" },
+                  "required": { "type": "boolean" },
+                  "format": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "permissions": {
+          "type": "object",
+          "properties": {
+            "filesystem": {
+              "type": "object",
+              "properties": {
+                "read": { "type": "array", "items": { "type": "string" } },
+                "write": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "tools": {
+              "type": "object",
+              "properties": {
+                "allow": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["name"],
+                    "properties": {
+                      "name": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "verification": {
+          "type": "object",
+          "properties": {
+            "gates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["name", "type"],
+                "properties": {
+                  "name": { "type": "string" },
+                  "type": { "type": "string" },
+                  "required": { "type": "boolean" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
