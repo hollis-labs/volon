@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Volon run logs (verbose, regenerable)
+.volon/logs/
+
+# Sensitive files
+*.env
+*.pem
+*.key
+credentials.*
+
+# Git worktrees
+.worktrees/
+
+# Nanite vault database files
+*.db
+*.db-shm
+*.db-wal
+
+# Local Go build caches
+.volon/.gomodcache/
+.volon/.gocache/
+.cache/
+
+# Compiled binaries
+volon
+forge
+
+# Editor
+.claude/

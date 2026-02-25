@@ -1,0 +1,6 @@
+{
+  "name": "prompt-volon",
+  "version": "0.1.0",
+  "description": "Prompt generator: produce copy/paste-ready Volon prompts from a natural language intent.",
+  "skills": ["volon-prompt"]
+}

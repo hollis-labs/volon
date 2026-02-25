@@ -1,0 +1,6 @@
+{
+  "name": "workflow-author",
+  "version": "0.1.0",
+  "description": "Workflow lifecycle management: create, edit, clone, deprecate user workflows.",
+  "skills": ["workflow-create", "workflow-edit", "workflow-clone", "workflow-deprecate"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "git",
+  "version": "0.2.0",
+  "description": "Git worktree, branch, PR, and commit helper skills.",
+  "skills": ["worktree-start", "pr-open", "commit-task"]
+}

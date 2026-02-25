@@ -1,0 +1,13 @@
+{
+  "name": "core",
+  "version": "0.1.0",
+  "description": "Core skills for config, observability, and Project Context Cache (PCC).",
+  "skills": [
+    "bootstrap-update",
+    "pcc-refresh",
+    "pause-task",
+    "resume-task",
+    "agent",
+    "volon-task"
+  ]
+}
